@@ -1,0 +1,4 @@
+<h1>All Products in Our Inventory </h1>
+<% @products.each do |product| %>
+		<li> <%= "#{product.name}, #{product.price}, #{product.catagory}" %></li>
+<% end %>

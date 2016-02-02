@@ -1,0 +1,8 @@
+<h1>All Products in <%= params[:room] %> </h1>
+
+	<ul>
+	<% @products.each do |product| %>
+			<li> 
+			<%= link_to product.name, inventory_one_product_path(room: product.catagory)%> </li>
+	<% end %>
+	</ul>

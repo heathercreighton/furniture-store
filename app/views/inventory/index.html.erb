@@ -1,0 +1,5 @@
+<h1> What room would you like to design? </h1>
+
+<% @rooms.each do |room| %>
+	<%= link_to room.catagory, inventory_by_catagory_path(room: room.catagory)%> <br/>
+	<% end %>
